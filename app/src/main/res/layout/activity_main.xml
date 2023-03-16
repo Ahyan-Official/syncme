@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        android:tint="#E22A41"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+
+        android:backgroundTint="#E22A41"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/icon3" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="Sync.Me"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/bc"
+        android:adjustViewBounds="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:text="@string/beginingText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="@integer/material_motion_duration_long_2">
+
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="View all"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="#fff"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:gravity="center">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="#fff"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:text=" Add contact ">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="#fff"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:text="Delete contact">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="#fff"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:text="Update contact">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Search"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textColor="#fff"
+            android:paddingLeft="48dp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:paddingRight="48dp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/button"
+            android:text="Search contact">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="#100F0F"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="20dp"
+            android:text="If you are not admin with passwords you cant delete other peoples contacts and update them as you want"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
